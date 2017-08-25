@@ -25,7 +25,7 @@ namespace Authenticationforms
             SqlConnection con = new SqlConnection("Data Source=SUYPC214;Initial Catalog=School;Integrated Security=true");
 
 
-            SqlCommand cmd = new SqlCommand("insert into tbl_Regist(Name,Password,email) values(@username, @password,@email)", con);
+            SqlCommand cmd = new SqlCommand("insert into tbl_Regist(Name,Password,email,RetryAttempts,Islocked) values(@username, @password,@email,0,0)", con);
 
              con.Open();
             cmd.Parameters.AddWithValue("@username", txtname.Text);

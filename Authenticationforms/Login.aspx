@@ -47,20 +47,22 @@
                     <asp:CheckBox ID="chkBoxRememberMe" runat="server" Text="Remember me" />
                 </td>
                 <td>
-                    <asp:Button ID="btn_login" runat="server" OnClick="btn_login_Click" style="width: 47px" Text="Login" />
+                    <asp:Button ID="btn_login" runat="server" OnClick="btn_login_Click" Text="Login" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">click here to register</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NewFolder1/Register.aspx">click here to register</asp:HyperLink>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:TextBox ID="Label4" runat="server"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
